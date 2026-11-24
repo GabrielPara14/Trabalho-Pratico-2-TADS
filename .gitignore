@@ -1,0 +1,9 @@
+# Build e arquivos do Visual Studio
+bin/
+obj/
+.vs/
+*.user
+
+# Node / editores
+node_modules/
+.vscode/
