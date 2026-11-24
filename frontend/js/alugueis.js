@@ -66,12 +66,12 @@ function mostrarAlugueis() {
                 <td>#${a.id}</td>
                 <td><strong>${seguro(nomeCliente(a.clienteId))}</strong></td>
                 <td>${seguro(nomeVeiculo(a.veiculoId))}</td>
-                <td>${dataBR(a.dataInicio)} a ${dataBR(a.dataDevolucao || a.dataFimPrevista)}</td>
+                <td class="text-nowrap">${dataBR(a.dataInicio)} a ${dataBR(a.dataDevolucao || a.dataFimPrevista)}</td>
                 <td>${dinheiro(a.valorDiaria)}</td>
                 <td>${a.valorTotal != null ? dinheiro(a.valorTotal) : '—'}</td>
                 <td>${emAberto(a) ? '<span class="tag escura">Em aberto</span>' : '<span class="tag">Devolvido</span>'}</td>
                 <td class="acoes">
-                    <button class="btn-link-texto" onclick="editarAluguel(${a.id})">${emAberto(a) ? 'Devolver / Editar' : 'Editar'}</button>
+                    <button class="btn-link-texto" onclick="editarAluguel(${a.id})">${emAberto(a) ? 'Devolver' : 'Editar'}</button>
                     <button class="btn-link-texto perigo" onclick="excluirAluguel(${a.id})">Excluir</button>
                 </td>
             </tr>`;
