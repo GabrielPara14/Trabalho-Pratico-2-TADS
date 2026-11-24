@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | AutoGiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body data-pagina="inicio">
+<div class="app">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="principal">
+        <header class="topbar" id="topbar"></header>
+        <section class="conteudo">
+            <div class="cabecalho">
+                <div>
+                    <div class="overline">Visão geral</div>
+                    <h1 class="titulo">Olá, Gabriel</h1>
+                    <div class="text-secondary fw-medium">Resumo da locadora com os números vindos da API</div>
+                </div>
+            </div>
+
+            <div class="kpis" id="kpis"></div>
+
+            <div class="linha-inicio">
+                <div class="card-cinza">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h2 class="card-titulo">Aluguéis em aberto</h2>
+                        <a class="btn-link-texto" href="alugueis.html">Ver todos</a>
+                    </div>
+                    <div id="emAberto"></div>
+                </div>
+                <div class="card-cinza">
+                    <h2 class="card-titulo">Atividade recente</h2>
+                    <div id="atividade"></div>
+                </div>
+            </div>
+
+            <div class="card-cinza">
+                <h2 class="card-titulo mb-3" style="font-size:16px">Relatórios rápidos (consultas com JOIN)</h2>
+                <div class="chips">
+                    <a class="btn-contorno" href="relatorios.html?r=frota">Veículos x fabricantes</a>
+                    <a class="btn-contorno" href="relatorios.html?r=historico">Histórico de aluguéis</a>
+                    <a class="btn-contorno" href="relatorios.html?r=clientes">Clientes x aluguéis</a>
+                    <a class="btn-contorno" href="relatorios.html?r=manutencoes">Veículos x manutenções</a>
+                    <a class="btn-contorno" href="relatorios.html?r=gastos">Gastos por fabricante</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/inicio.js"></script>
+</body>
+</html>
