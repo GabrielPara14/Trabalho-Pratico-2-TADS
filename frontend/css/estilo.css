@@ -95,6 +95,8 @@ h1.titulo { font-size: 32px; font-weight: 800; margin: 2px 0 0; }
   background: var(--campo); border: 1px solid transparent; border-radius: 12px; padding: 11px 14px; width: 100%; }
 .campo input:focus, .campo select:focus, .campo textarea:focus { outline: none; border-color: #9e9e9e; background: #fff; }
 .campo-duplo { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.campo-duplo input { min-width: 0; padding-left: 10px; padding-right: 8px; }
+.tabela td { white-space: nowrap; }
 .filtros h2 { font-size: 16px; font-weight: 800; margin: 0 0 16px; }
 .filtros .botoes { display: flex; gap: 8px; }
 
