@@ -17,6 +17,10 @@ namespace trabalho_pratico_1
                     });
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            // TP2: libera o front-end (outra origem) para chamar a API via fetch
+            builder.Services.AddCors(options =>
+                options.AddPolicy("FrontEnd", policy =>
+                    policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
             var app = builder.Build();
             if (app.Environment.IsDevelopment())
             {
@@ -24,6 +28,7 @@ namespace trabalho_pratico_1
                 app.UseSwaggerUI();
             }
             app.UseHttpsRedirection();
+            app.UseCors("FrontEnd");
             app.UseAuthorization();
             app.MapControllers();
             app.Run();
