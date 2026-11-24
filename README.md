@@ -13,6 +13,7 @@ Nenhum dado é fixo no front-end: tudo é lido e gravado na API com `fetch`.
 | `frontend/js/api.js` | Funções de `fetch` (GET, POST, PUT, DELETE) e formatação |
 | `frontend/js/layout.js` | Barra lateral, topo, diálogo de exclusão e avisos de todas as páginas |
 | `frontend/js/*.js` | Um arquivo por tela |
+| `documentacao/` | Artigo no modelo SBC (`.pdf` e `.docx`), prints das telas e consultas SQL de exemplo |
 
 ## Telas
 
